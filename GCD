@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+int x, y,r;
+printf("\n Enter the values of x and y:-");
+scanf("\n%d",&x);
+scanf("\n%d",&y);
+while(y>0)
+{
+r=x%y;
+x=y;
+y=r;
+}
+printf("\nGCD is %d",x);
+}
